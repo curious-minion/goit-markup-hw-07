@@ -1,0 +1,29 @@
+/* logo header+footer*/
+
+.logo.header a {
+  @include centeredFlex(inline-flex);
+}
+
+.logo:focus,
+.footer a:focus {
+  color: none;
+}
+
+.logo > .link,
+.footer .logo {
+  color: getColor("basic-black");
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.29;
+}
+
+.logo {
+  @include centeredFlex();
+}
+
+.logo .logo-half,
+.footer .logo-half {
+  color: getColor("accent-color");
+}
