@@ -15,10 +15,12 @@
 
   color: getColor("title-color");
   background-color: getColor("team-button-bgr");
-  font-family: Roboto, sans-serif;
-  font-weight: 500;
-  font-size: 16px;
+  @include font($main-font, 500, 16px);
   line-height: 1.63;
+}
+
+.button {
+  cursor: pointer;
 }
 
 .projects .buttons-menu {

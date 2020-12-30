@@ -292,7 +292,7 @@
     <!-- Footer: contacts info -->
     <footer class="footer">
       <div class="container network">
-        <div class="logo-address">
+        <div>
           <a href="./index.html" class="logo">
             <span class="logo-half">Web</span>Studio</a
           >
@@ -339,22 +339,23 @@
         </div>
         <div class="subscription">
           <p>подпишитесь на рассылку</p>
-          <div class="subscription-wrap">
-            <label class="subscription-field">
-              <input
-                type="email"
-                class="subscription-input"
-                name="email"
-                placeholder="E-mail"
-              />
-            </label>
+          <form class="subscription-form" autocomplete="off">
+            <input
+              type="email"
+              class="subscription-input"
+              name="email"
+              maxlength="45"
+              placeholder="E-mail"
+            />
+
             <button class="subscription-submit" type="submit">
               Подписаться
               <svg class="icon-send" width="24" height="24">
                 <use href="./images/sprite.svg#icon-send"></use>
               </svg>
             </button>
-          </div>
+          </form>
+        </div>
         </div>
       </div>
     </footer>

@@ -1,8 +1,8 @@
+@import "./utils/variables";
+@import "./utils/fonts";
+@import "./utils/mixin";
 @import "./base/normalize";
 @import "./base/common";
-
-@import "./utils/variables";
-@import "./utils/mixin";
 
 @import "./components/logo";
 @import "./components/navigation";

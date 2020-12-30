@@ -50,8 +50,8 @@
   padding: 0;
 }
 
-.contact-info.item:not(:last-child) {
-  margin-right: 50px;
+.contact-info .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .contact-info .link {
