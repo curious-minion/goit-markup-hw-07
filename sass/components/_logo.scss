@@ -13,7 +13,10 @@
 .footer .logo {
   color: getColor("basic-black");
   text-decoration: none;
-  @include font($logo-font, 700, 26px);
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+
   line-height: 1.29;
 }
 

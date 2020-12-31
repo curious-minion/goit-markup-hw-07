@@ -16,5 +16,42 @@ $colors: (
   @return map-get($colors, $key);
 }
 
-$main-font: "Roboto";
-$logo-font: "Raleway";
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway"), url("../sass/utils/Raleway-Bold.woff2") format("woff2"),
+    url("../sass/utils/Raleway-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"), url("../sass/utils/Roboto.woff2") format("woff2"),
+    url("../sass/utils/Roboto.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"), url("../sass/utils/Roboto-Medium.woff2") format("woff2"),
+    url("../sass/utils/Roboto-Medium") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"), url("../sass/utils/Roboto-Bold.woff2") format("woff2"),
+    url("../sass/utils/Roboto-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"), url("../sass/utils/Roboto-Black.woff2") format("woff2"),
+    url("../sass/utils/Roboto-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}

@@ -1,38 +1,3 @@
-@font-face {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/Raleway Bold.woff2") format("woff2"), url("../fonts/Raleway Bold.ttf") format("ttf"), url("../fonts/Raleway Bold.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/Roboto.woff2") format("woff2"), url("../fonts/Roboto.ttf") format("ttf"), url("../fonts/Roboto.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  src: url("../fonts/Roboto Medium.ttf") format("ttf"), url("../fonts/Roboto Medium.woff2") format("woff2"), url("../fonts/Roboto Medium.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/Roboto Bold.ttf") format("ttf"), url("../fonts/Roboto Bold.woff2") format("woff2"), url("../fonts/Roboto Bold.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 900;
-  src: url("../fonts/Roboto Black.ttf") format("ttf"), url("../fonts/Roboto Black.woff2") format("woff2"), url("../fonts/Roboto Black.woff") format("woff");
-}
-
 /*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 /*
 Document
@@ -304,6 +269,41 @@ summary {
   display: list-item;
 }
 
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway"), url("../sass/utils/Raleway-Bold.woff2") format("woff2"), url("../sass/utils/Raleway-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"), url("../sass/utils/Roboto.woff2") format("woff2"), url("../sass/utils/Roboto.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"), url("../sass/utils/Roboto-Medium.woff2") format("woff2"), url("../sass/utils/Roboto-Medium") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"), url("../sass/utils/Roboto-Bold.woff2") format("woff2"), url("../sass/utils/Roboto-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"), url("../sass/utils/Roboto-Black.woff2") format("woff2"), url("../sass/utils/Roboto-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -325,10 +325,9 @@ a.link,
 
 body {
   color: #757575;
-  font-family: "Roboto";
+  font-family: Roboto, sans-serif;
   font-weight: 400;
   font-size: 14px;
-  font-style: normal;
   letter-spacing: 0.03em;
   line-height: 1.72;
 }
@@ -388,10 +387,9 @@ a {
 .footer .logo {
   color: #000000;
   text-decoration: none;
-  font-family: "Raleway";
+  font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
-  font-style: normal;
   line-height: 1.29;
 }
 
@@ -417,10 +415,10 @@ a {
 }
 
 .header-nav {
-  background-color: var(--basic-white);
+  background-color: #ffffff;
 }
 
-.header-nav .border-line {
+.header-nav.border-line {
   border-bottom: 1px solid #ececec;
 }
 
@@ -483,6 +481,7 @@ a {
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
+  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
@@ -1185,15 +1184,7 @@ footer {
   border-radius: 4px;
   color: #212121;
   background-color: #f5f4fa;
-  font-family: "Roboto";
-  font-weight: 500;
-  font-size: 16px;
-  font-style: normal;
   line-height: 1.63;
-}
-
-.button {
-  cursor: pointer;
 }
 
 .projects .buttons-menu {
@@ -1213,6 +1204,10 @@ footer {
 }
 
 .button {
+  cursor: pointer;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
   -webkit-box-shadow: 0 0 0;
           box-shadow: 0 0 0;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
