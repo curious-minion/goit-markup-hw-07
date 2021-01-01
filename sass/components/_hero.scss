@@ -24,8 +24,7 @@
   margin-bottom: 30px;
 
   color: getColor("basic-white");
-  font-weight: 900;
-  font-size: 44px;
+  @include font($main-font, 900, 44px);
 
   line-height: 1.36;
   letter-spacing: 0.06em;
@@ -41,8 +40,8 @@
   margin-bottom: 0;
 
   color: getColor("basic-white");
-  font-weight: 700;
-  font-size: 16px;
+  @include font($main-font, 700, 16px);
+
   line-height: 1.87;
   letter-spacing: 0.06em;
 
@@ -127,8 +126,8 @@
   margin: 0;
   margin-bottom: 12px;
 
-  font-size: 20px;
-  font-weight: 700;
+  @include font($main-font, 700, 20px);
+
   line-height: 1.15;
   color: getColor("title-color");
 }
